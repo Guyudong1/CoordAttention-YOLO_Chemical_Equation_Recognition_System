@@ -1,0 +1,43 @@
+Validating E:\sophomore\study\pytorch\pythonProject\MachineLearning\Chemical equation recognition\Model\chemical_equations_training\cell_only_training_5struct_2\weights\best.pt...
+Ultralytics 8.3.232  Python-3.9.21 torch-2.5.1 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 8188MiB)
+YOLO11n summary (fused): 100 layers, 2,583,127 parameters, 0 gradients, 6.3 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 313/313 16.5it/s 19.0s
+                   all       5000      74900      0.997      0.998      0.995      0.918
+                   sub       4813      15343      0.992          1      0.995      0.901
+                     +       4806       8505      0.996      0.999      0.995      0.904
+                    aR       4711       4711          1      0.997      0.995      0.929
+                    a2        289        289          1      0.998      0.995       0.91
+                    ot       5000      46052          1      0.995      0.995      0.946
+Speed: 0.1ms preprocess, 0.9ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to E:\sophomore\study\pytorch\pythonProject\MachineLearning\Chemical equation recognition\Model\chemical_equations_training\cell_only_training_5struct_2
+
+=== 训练完成，汇总主要指�? ===
+
+=== 训练指标 ===
+
+=== �?�?5个epoch ===
+   epoch     time  train/box_loss  ...    lr/pg0    lr/pg1    lr/pg2
+5      6  5298.67         0.37348  ...  0.000505  0.000505  0.000505
+6      7  6157.74         0.35302  ...  0.000406  0.000406  0.000406
+7      8  7021.10         0.33255  ...  0.000307  0.000307  0.000307
+8      9  7866.01         0.31396  ...  0.000208  0.000208  0.000208
+9     10  8701.20         0.29656  ...  0.000109  0.000109  0.000109
+
+[5 rows x 15 columns]
+
+=== �?�?5个epoch平均指标 ===
+平均 mAP50: 0.9945
+平均 mAP50-95: 0.8934
+平均 precision: 0.9957
+平均 recall: 0.9978
+
+=== 验证模型 ===
+Ultralytics 8.3.232  Python-3.9.21 torch-2.5.1 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 8188MiB)
+YOLO11n summary (fused): 100 layers, 2,583,127 parameters, 0 gradients, 6.3 GFLOPs
+val: Fast image access  (ping: 0.20.0 ms, read: 42.514.6 MB/s, size: 15.0 KB)
+val: Scanning E:\sophomore\study\pytorch\pythonProject\MachineLearning\Chemical equation recognition\data\equations_yolo\labels\val.cache... 5000 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 5000/5000 5.0Mit/s 0.0s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 313/313 13.7it/s 22.8s
+                   all       5000      74603      0.955      0.388      0.674      0.616
+                   sub       5000      74603      0.955      0.388      0.674      0.616
+Speed: 0.6ms preprocess, 1.7ms inference, 0.0ms loss, 0.5ms postprocess per image
+Results saved to E:\sophomore\study\pytorch\pythonProject\MachineLearning\Chemical equation recognition\Model\runs\detect\val6
